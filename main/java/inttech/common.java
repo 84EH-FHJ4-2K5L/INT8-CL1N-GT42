@@ -15,7 +15,6 @@ public class common
     public static CommonProxy proxy;
 @EventHandler
 public void preInit(FMLPreInitializationEvent e) { 
-	ItemConstructor.init();
 proxy.preInit(e);
 }
 @EventHandler

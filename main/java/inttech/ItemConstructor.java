@@ -1,4 +1,4 @@
-package inttech;
+/**package inttech;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,13 +17,11 @@ class ItemConstructor {
 
 class ItemConstruction {
 	static String[] ITypeCollection = { "Screw", "Bolt", "Rod", "Plate", "Ingot", "Pin", "Paste", "Ring", "Roll" };
-
-	/**
 	 * public static String[][] getCollectionGenerated(String[][] NewCollection)
 	 * { or(int i=0; i<Collection.length; i++) { for(int j=0;
 	 * j<ITypeCollection.length; j++) { NewCollection[i][j]=+""; return
 	 * NewCollection; }
-	 */
+	
 
 	public static String[][] getCollection(String[] Collection, String[][] NewCollection, Item ItemGenerated) {
 		for (int i = 0; i < Collection.length; i++) {
@@ -38,4 +36,4 @@ class ItemConstruction {
 		}
 		return NewCollection;
 	}
-}
+}*/

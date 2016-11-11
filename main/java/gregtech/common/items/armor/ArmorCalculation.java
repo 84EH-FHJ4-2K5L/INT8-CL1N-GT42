@@ -114,12 +114,12 @@ public class ArmorCalculation {
 						if (data.mPrefix == OrePrefixes.plate && data.mMaterial.mMaterial == Materials.NetherStar) {
 							def[8] = def[8] + 0.20f;
 						}
-						if (data.mPrefix == OrePrefixes.plate && data.mMaterial.mMaterial == Materials.InfusedFire) {
+						/**if (data.mPrefix == OrePrefixes.plate && data.mMaterial.mMaterial == Materials.InfusedFire) {
 							def[10] = def[10] + 3.0f;
 						}
 						if (data.mPrefix == OrePrefixes.plate && data.mMaterial.mMaterial == Materials.InfusedEntropy) {
 							def[10] = def[10] + 4.0f;
-						}
+						}*/
 					} else if (GT_ModHandler.isChargerItem(parts[i])) {
 						def[12] = def[12] + (float) ic2.api.item.ElectricItem.manager.getCharge(parts[i]);
 						def[0] = (float) (def[0] + Math.pow(ic2.api.item.ElectricItem.manager.getCharge(parts[i]), 0.33f));

@@ -75,50 +75,50 @@ public class GT_Client extends GT_Proxy
     	mCapeRenderer = new GT_CapeRenderer(mCapeList);
         mAnimationTick = 0L;
         mAnimationDirection = false;
+        
         mPosR = Arrays.asList(new Materials[]{
-                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.Thaumium, Materials.InfusedVis, Materials.InfusedAir, Materials.InfusedFire, Materials.FierySteel, Materials.Firestone
+                /*Materials.ChargedCertusQuartz, Materials.Enderium,*/ Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, /*Materials.InfusedOrder, Materials.Force,*/
+                Materials.Pyrotheum, /*Materials.Sunnarium,*/ Materials.Glowstone, Materials.Thaumium, /*Materials.InfusedVis, Materials.InfusedAir, Materials.InfusedFire, Materials.FierySteel, Materials.Firestone*/
         });
         mPosG = Arrays.asList(new Materials[]{
-                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.InfusedAir, Materials.InfusedEarth
+               /*Materials.ChargedCertusQuartz, Materials.Enderium,*/ Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, /*Materials.InfusedOrder, Materials.Force,*/
+                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone,/* Materials.InfusedAir, Materials.InfusedEarth*/
         });
         mPosB = Arrays.asList(new Materials[]{
-                /**Materials.ChargedCertusQuartz, **/Materials.Enderium, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.InfusedVis,
-                Materials.InfusedWater, Materials.Thaumium
+                /*Materials.ChargedCertusQuartz, Materials.Enderium,*/ Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria,/* Materials.InfusedOrder, Materials.InfusedVis,
+                Materials.InfusedWater,*/ Materials.Thaumium
         });
         mNegR = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy, Materials.NetherStar
+                //Materials.InfusedEntropy, Materials.NetherStar
         });
         mNegG = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy, Materials.NetherStar
+                //Materials.InfusedEntropy, Materials.NetherStar
         });
         mNegB = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy, Materials.NetherStar
+                //Materials.InfusedEntropy, Materials.NetherStar
         });
         mMoltenPosR = Arrays.asList(new Materials[]{
-                Materials.Enderium, Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.Thaumium, Materials.InfusedVis, Materials.InfusedAir, Materials.InfusedFire, Materials.FierySteel, Materials.Firestone
+                /*Materials.Enderium,*/ Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, /*Materials.InfusedOrder, Materials.Force,*/
+                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.Thaumium, /*Materials.InfusedVis, Materials.InfusedAir, Materials.InfusedFire, Materials.FierySteel, Materials.Firestone*/
         });
         mMoltenPosG = Arrays.asList(new Materials[]{
-                Materials.Enderium, Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.Force,
-                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, Materials.InfusedAir, Materials.InfusedEarth
+                /*Materials.Enderium,*/ Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, /*Materials.InfusedOrder, Materials.Force,*/
+                Materials.Pyrotheum, Materials.Sunnarium, Materials.Glowstone, /*Materials.InfusedAir, Materials.InfusedEarth*/
         });
         mMoltenPosB = Arrays.asList(new Materials[]{
-                Materials.Enderium, Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, Materials.InfusedOrder, Materials.InfusedVis,
-                Materials.InfusedWater, Materials.Thaumium
+                /*Materials.Enderium,*/ Materials.NetherStar, Materials.Vinteum, Materials.Uranium235, Materials.InfusedGold, Materials.Plutonium241, Materials.NaquadahEnriched, Materials.Naquadria, /*Materials.InfusedOrder, Materials.InfusedVis,
+                Materials.InfusedWater,*/ Materials.Thaumium
         });
         mMoltenNegR = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy
+                //Materials.InfusedEntropy
         });
         mMoltenNegG = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy
+               // Materials.InfusedEntropy
         });
         mMoltenNegB = Arrays.asList(new Materials[]{
-                Materials.InfusedEntropy
+                //Materials.InfusedEntropy
         });
     }
-
     private static void drawGrid(DrawBlockHighlightEvent aEvent) {
         GL11.glPushMatrix();
         GL11.glTranslated(-(aEvent.player.lastTickPosX + (aEvent.player.posX - aEvent.player.lastTickPosX) * (double) aEvent.partialTicks), -(aEvent.player.lastTickPosY + (aEvent.player.posY - aEvent.player.lastTickPosY) * (double) aEvent.partialTicks), -(aEvent.player.lastTickPosZ + (aEvent.player.posZ - aEvent.player.lastTickPosZ) * (double) aEvent.partialTicks));

@@ -728,6 +728,7 @@ public enum OrePrefixes {
                 if (name().startsWith("gem")) return mLocalizedMaterialPre + aMaterial.mDefaultLocalName + " Crystal";
                 if (name().startsWith("plate")) return mLocalizedMaterialPre + aMaterial.mDefaultLocalName + " Pane";
                 break;
+                /**
             case InfusedAir:
             case InfusedDull:
             case InfusedEarth:
@@ -750,6 +751,7 @@ public enum OrePrefixes {
                 if (this == OrePrefixes.crushed)
                     return mLocalizedMaterialPre + aMaterial.mDefaultLocalName + " Crystals";
                 break;
+                */
             case Wheat:
                 if (name().startsWith("dust")) return mLocalizedMaterialPre + "Flour";
                 break;
@@ -772,9 +774,9 @@ public enum OrePrefixes {
                 if (name().startsWith("nugget")) return mLocalizedMaterialPre + aMaterial.mDefaultLocalName + " Chip";
                 if (name().startsWith("foil")) return "Thin " + aMaterial.mDefaultLocalName + " Sheet";
                 break;
-            case FierySteel:
+            /**case FierySteel:
                 if (mIsContainer) return mLocalizedMaterialPre + "Fiery Blood" + mLocalizedMaterialPost;
-                break;
+                break;*/
             case Steeleaf:
                 if (name().startsWith("ingot")) return mLocalizedMaterialPre + aMaterial.mDefaultLocalName;
                 break;

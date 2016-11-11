@@ -25,9 +25,9 @@ public class ProcessingCrushedPurified implements gregtech.api.interfaces.IOreRe
         	aMaterial == Materials.Amethyst||
         	aMaterial == Materials.Emerald||
         	aMaterial == Materials.Ruby||
-        	aMaterial == Materials.Amber||
+        	//aMaterial == Materials.Amber||
         	aMaterial == Materials.Diamond||
-        	aMaterial == Materials.FoolsRuby||
+        	//aMaterial == Materials.FoolsRuby||
         	aMaterial == Materials.BlueTopaz||
         	aMaterial == Materials.GarnetRed||
         	aMaterial == Materials.Topaz||

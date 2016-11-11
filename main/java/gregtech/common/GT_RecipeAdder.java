@@ -465,12 +465,12 @@ public class GT_RecipeAdder
         if ((aMold == null) || (aInput == null) || (aOutput == null)) {
             return false;
         }
-        if (aInput.isFluidEqual(Materials.PhasedGold.getMolten(144))) {
-            aInput = Materials.VibrantAlloy.getMolten(aInput.amount);
-        }
-        if (aInput.isFluidEqual(Materials.PhasedIron.getMolten(144))) {
-            aInput = Materials.PulsatingIron.getMolten(aInput.amount);
-        }
+        //if (aInput.isFluidEqual(Materials.PhasedGold.getMolten(144))) {
+          //  aInput = Materials.VibrantAlloy.getMolten(aInput.amount);
+       // }
+       // if (aInput.isFluidEqual(Materials.PhasedIron.getMolten(144))) {
+       //     aInput = Materials.PulsatingIron.getMolten(aInput.amount);
+       // }
         if ((aDuration = GregTech_API.sRecipeFile.get("fluidsolidifier", aOutput, aDuration)) <= 0) {
             return false;
         }
@@ -487,12 +487,13 @@ public class GT_RecipeAdder
         if ((aInput == null) || (aOutput == null)) {
             return false;
         }
+        /**
         if (aOutput.isFluidEqual(Materials.PhasedGold.getMolten(1))) {
             aOutput = Materials.VibrantAlloy.getMolten(aOutput.amount);
         }
         if (aOutput.isFluidEqual(Materials.PhasedIron.getMolten(1))) {
             aOutput = Materials.PulsatingIron.getMolten(aOutput.amount);
-        }
+        }*/
         if ((aDuration = GregTech_API.sRecipeFile.get("fluidsmelter", aInput, aDuration)) <= 0) {
             return false;
         }
@@ -507,12 +508,13 @@ public class GT_RecipeAdder
         if ((aInput == null) || (aOutput == null)) {
             return false;
         }
+        /**
         if (aOutput.isFluidEqual(Materials.PhasedGold.getMolten(1))) {
             aOutput = Materials.VibrantAlloy.getMolten(aOutput.amount);
         }
         if (aOutput.isFluidEqual(Materials.PhasedIron.getMolten(1))) {
             aOutput = Materials.PulsatingIron.getMolten(aOutput.amount);
-        }
+        }*/
         if ((aDuration = GregTech_API.sRecipeFile.get("fluidextractor", aInput, aDuration)) <= 0) {
             return false;
         }

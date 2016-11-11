@@ -172,15 +172,15 @@ public class ProcessingDust implements gregtech.api.interfaces.IOreRecipeRegistr
             case Tanzanite:
                 GT_Values.RA.addImplosionRecipe(GT_Utility.copyAmount(4L, new Object[]{aStack}), 24, GT_OreDictUnificator.get(OrePrefixes.gem, aMaterial, 3L), GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.DarkAsh, 12L));
                 break;
-            case FoolsRuby:
+            //case FoolsRuby:
             case GarnetRed:
             case GarnetYellow:
             case Jasper:
-            case Amber:
+            //case Amber:
             case Monazite:
-            case Forcicium:
-            case Forcillium:
-            case Force:
+           // case Forcicium:
+           // case Forcillium:
+            //case Force:
                 GT_Values.RA.addImplosionRecipe(GT_Utility.copyAmount(4L, new Object[]{aStack}), 16, GT_OreDictUnificator.get(OrePrefixes.gem, aMaterial, 3L), GT_OreDictUnificator.get(OrePrefixes.dustTiny, Materials.DarkAsh, 8L));
         }
     }
